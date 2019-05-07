@@ -1,12 +1,12 @@
 // Creates an array that lists out all of the options (Rock, Paper, or Scissors).
 var computerChoice = ["r", "p", "s"];
-var guessSoFar = [];
+var guessSoFar = []; //////////////////////////////////string catenation goes here; if greater than 3 then loss = +1
 
 // Creating variables to hold the number of wins, losses, and ties. They start at 0.
 var wins = 0;
 var losses = 0;
 // var ties = 0;
-var guessCnt = 3;
+var guessCnt = 2;
 
 // Create variables that hold references to the places in the HTML where we want to display things.
 var directionsText = document.getElementById("directions-text");
@@ -29,17 +29,21 @@ var computerGuess = computerChoice[Math.floor(Math.random() * computerChoice.len
 
 // This logic determines the outcome of the game (win/loss/tie), and increments the appropriate number
 
-// for (i = 1; i <= 3; i++)
-// if (i==3){break}
-
 if  (userGuess === computerGuess)
-    {wins++;}
+    {wins++;
+    losses;
+    // document.write("You won! Let's play another game.");
+    }
 else if 
-    ((userGuess !== computerGuess) && (guessCnt !== 0))
+    (userGuess !== computerGuess) 
+    // && (guessCnt !== 0))
     {guessCnt--;}
 else 
-    ((guessCnt === 0) && (userGuess !== computerGuess))
-    {losses++;}
+    ((guessCnt = 1) && (userGuess !== computerGuess))
+    {losses++;
+    guessCnt++; 
+    // document.write("You Lost! Let's try again.");
+};
 
 directionsText.textContent = "";
 
