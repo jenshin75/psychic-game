@@ -1,6 +1,6 @@
 // Creates an array that lists out all of the options (Rock, Paper, or Scissors).
 var computerChoice = ["r", "p", "s"];
-var guessSoFar = [];
+var guessSoFar = [ ];
 
 // Creating variables to hold the number of wins, losses, and ties. They start at 0.
 var wins = 0;
@@ -31,14 +31,17 @@ var computerGuess = computerChoice[Math.floor(Math.random() * computerChoice.len
 
 if  (userGuess === computerGuess) 
     {wins++;
-     guessCnt === 0;}
+    guessCnt = 3;}
 else if
 // for (var i = 0; i < guessCnt.length; i++)
     (userGuess !== computerGuess) 
-    {guessCnt--;}
+    {guessSoFarText;
+    guessCnt--;}
 else if
-    ((userGuess !== computerGuess) && (guessCnt === 1))
-    {guessCnt == 0}   
+    ((userGuess !== computerGuess) && (guessCnt = 1))
+    {guesssoFar.length;
+    guessCnt == 0
+    losses++;}
 else
     {losses++;}
 
@@ -52,5 +55,5 @@ winsText.textContent = "Wins: (# of times you guessed the letter correctly) " + 
 lossesText.textContent = "Losses: (# of times you failed to guess the letter correctly) " + losses;
 // tiesText.textContent = "ties: " + ties;
 guessCntText.textContent = "Guesses Left: " + guessCnt;
-// guessSoFarText.textContent = "Your Guesses So Far: " + guessSoFar;
+guessSoFarText.textContent = "Your Guesses So Far: " + guessSoFar;
 }
