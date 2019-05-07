@@ -31,21 +31,16 @@ var computerGuess = computerChoice[Math.floor(Math.random() * computerChoice.len
 
 if  (userGuess === computerGuess) 
     {wins++;
-    guessCnt = 3;}
-else if
-// for (var i = 0; i < guessCnt.length; i++)
-    (userGuess !== computerGuess) 
-    {guessSoFarText;
-    guessCnt--;}
-else if
-    ((userGuess !== computerGuess) && (guessCnt = 1))
-    {guesssoFar.length;
-    guessCnt == 0
-    losses++;}
-else
-    {losses++;}
+    losses = 0;
+    guessCnt;}
+else if 
+    (userGuess !== computerGuess)
+    {guessCnt--;}
+else 
+    ((guessCnt = 1) && (userGuess !== computerGuess))
+    {losses++;
+    guessCntr;}
 
-// Hide the directions
 directionsText.textContent = "";
 
 // Display the user and computer guesses, and wins/losses/ties.
