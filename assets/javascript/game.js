@@ -4,7 +4,7 @@ var computerChoice = ["r", "p", "s"];
 // Creating variables to hold the number of wins, losses, and ties. They start at 0.
 var wins = 0;
 var losses = 0;
-var guessCnt = 2;
+var guessCnt = 3;
 var wrongLetter = "";
 var userChoice = "";
 
@@ -14,7 +14,6 @@ var userChoiceText = document.getElementById("userChoice-text");
 var computerChoiceText = document.getElementById("computerChoice-text");
 var winsText = document.getElementById("wins-text");
 var lossesText = document.getElementById("losses-text");
-// var tiesText = document.getElementById("ties-text");
 var guessCntText = document.getElementById("guessCnt-text");
 var wrongLetterText = document.getElementById("wrongLetter-text");
 
@@ -36,24 +35,15 @@ var userGuess = event.key.toLowerCase ();
 
 var computerGuess = computerChoice[Math.floor(Math.random() * computerChoice.length)];
 
-//?????
-//var displayBoardDiv = document.getElementById("output")
-// displayBoardDiv.textContent = boardGame.join ("");
-
 // This logic determines the outcome of the game (win/loss/tie), and increments the appropriate number
-
 if  (userGuess === computerGuess)
-    {wins++;}
+    {wins++;
+    guessCnt;}
 else
-    (userGuess !== computerGuess) && ((guessCnt > 0) && (guessCnt < 4))
     {guessCnt--;
-    // wrongLetter.push ( wrongLetter + userChoice + " ";);
+    // document.write("You won! Let's play again.")
      losses++;}
     
-// var outputWrongDiv = document.getElementById("wrongGuess");
-// outputWrongDiv.textContext = wrongLetter;
-//         }
-
 if (guessCnt === 0)
     {losses++;
     // document.write("You lost! Let's try again.");
@@ -66,7 +56,6 @@ userChoiceText.textContent = "You chose: " + userGuess;
 computerChoiceText.textContent = "The computer chose: " + computerGuess;
 winsText.textContent = "Wins: (# of times you guessed the letter correctly) " + wins;
 lossesText.textContent = "Losses: (# of times you failed to guess the letter correctly) " + losses;
-// tiesText.textContent = "ties: " + ties;
 guessCntText.textContent = "Guesses Left: " + guessCnt;
 wrongLetterText.textContent = "Your Guesses So Far: " + wrongLetter;
 
