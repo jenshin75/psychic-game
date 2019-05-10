@@ -29,10 +29,10 @@ function resetGame() {
 // This function is run whenever the user presses a key.
 document.onkeyup = function (event) {
 
-    // Determines which key was pressed.
-     userGuess = event.key.toLowerCase();
+// Determines which key was pressed.
+userGuess = event.key.toLowerCase();
 
-    var computerGuess = computerChoice[Math.floor(Math.random() * computerChoice.length)];
+var computerGuess = computerChoice[Math.floor(Math.random() * computerChoice.length)];
 
     // This logic determines the outcome of the game (win/loss/tie), and increments the appropriate number
     if (userGuess === computerGuess) {
@@ -43,7 +43,7 @@ document.onkeyup = function (event) {
         }
     else {
         guessCnt--;
-        wrongGuessLetter = wrongGuessLetter + userGuess + ",";
+        wrongGuessLetter = wrongGuessLetter + userGuess + ", ";
         wrongGuessLetterText.textContent = wrongGuessLetter;
     }
 
@@ -59,8 +59,8 @@ document.onkeyup = function (event) {
      // Display the user and computer guesses, and wins/losses/ties.
      userChoiceText.textContent = "You chose: " + userGuess;
      computerChoiceText.textContent = "The computer chose: " + computerGuess;
-     winsText.textContent = "Wins: (# of times you guessed the letter correctly) " + wins;
-     lossesText.textContent = "Losses: (# of times you failed to guess the letter correctly) " + losses;
+     winsText.textContent = "Wins (# of times you guessed the letter correctly): " + wins;
+     lossesText.textContent = "Losses (# of times you failed to guess the letter correctly): " + losses;
      guessCntText.textContent = "Guesses Left: " + guessCnt;
      wrongGuessLetterText.textContent = "Your Guesses So Far: " + wrongGuessLetter;
 }

@@ -5,17 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Psychic Game</title>
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <title>The Psychic Game</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 
 </head>
 
 <body>
 
-    <div class="container">
-
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
             <div id="myBoard">
                 <h1>The Psychic Game</h1>
+                <br>
                 <p id="directions-text">Guess what letter I'm thinking of!</p>
                 <p id="userChoice-text"></p>
                 <p id="computerChoice-text"></p>
@@ -23,11 +26,12 @@
                 <p id="losses-text"></p>
                 <p id="guessCnt-text"></p>
                 <p id="wrongGuessLetter-text"></p>
-
             </div>
+        <div class="col-md-4"></div>
     </div>
+</div>
 
-    <script src="./assets/javascript/game.js"></script>
+<script src="./assets/javascript/game.js"></script>
 </body>
 
 </html>
