@@ -1,9 +1,11 @@
-var computerChoice = ["r", "p", "s"];
+// var computerChoice = ["r", "p", "s"];
+var computerChoice = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o",
+"p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 
 // Creating variables to hold the number of wins, losses, and ties. They start at 0.
 var wins = 0;
 var losses = 0;
-var guessCnt = 3;
+var guessCnt = 10;
 var wrongGuessLetter = "";
 var userChoice = "";
 
@@ -22,7 +24,7 @@ function resetGame() {
     // computerChoice = "";
     // wins = 0;
     // losses = 0;
-    guessCnt = 3;
+    guessCnt = 10;
     wrongGuessLetter = "";
 }
 
