@@ -1,8 +1,10 @@
 .container {
     background-image: url("../images/background.jpg");
-    width: 950px;
-    height: 500px;
-    margin-left: 200px;
+    min-height: 500px;
+    max-width: 950px;
+    width: 90%;
+    height: 90%;
+    margin: auto;
     margin-top: 50px;
     border: 20px solid skyblue;
 }
