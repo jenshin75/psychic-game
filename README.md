@@ -19,7 +19,8 @@ When the user guesses what letter the computer is thinking of, the following cou
 ********************************************************************************************************************
 Sources Referenced for Homework #3:
 
-Class Activity # ????? 
+- Class Activity #23 (RPS Coded)
+- Phil's Psedo Code Logic (Slacked https://nueva201904fsf3.slack.com/messages/CHH3Z7GQH/)
 
 
 
