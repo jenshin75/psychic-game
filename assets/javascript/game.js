@@ -50,7 +50,7 @@ document.onkeyup = function (event) {
     }
     else {
         guessCnt--;
-        wrongGuessLetter = wrongGuessLetter + userGuess + " ,;
+        wrongGuessLetter = wrongGuessLetter + userGuess + " ,";
         wrongGuessLetterText.textContent = wrongGuessLetter;
     }
 
